@@ -18,7 +18,7 @@ def get_jobs(url:str) -> None:
     # get the base url we'll use into the rest of the code
     base_url = response.url
     
-    # get extacted data 
+    # Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(response.content, 'lxml')
 
     # find all <ul> tags with "pagination menu" as class attr
