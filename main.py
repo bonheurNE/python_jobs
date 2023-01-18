@@ -100,7 +100,7 @@ def get_job_names_href(tuple_data: tuple) -> None:
             json_file.close()
             print(f"file python_jobs.json created succefully ")
     else:
-        for a_tag in i:
+        for a_tag in elements:
             a = a_tag.find('a')
             job_title = a.text
 
